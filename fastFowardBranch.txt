@@ -6,3 +6,8 @@
 2-Change this file.
   Commit changes
   "Change fastForward.txt (fastForwardBranch 2nd commit)"
+3-Just before this we used the command :
+  $git push origin fastForwardBranch 
+  in order to make that branch a remote branch on github 
+  Commit changes :
+  "Change fastForward.txt (fastForwardBranch 3rd commit)"
