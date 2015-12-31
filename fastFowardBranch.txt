@@ -3,11 +3,28 @@
   Change this file.
   Commit changes:
   "Create fastForwardBranch and fastForwardBranch.txt Change it(fastForwardBranch 1st commit)"
+
+
 2-Change this file.
   Commit changes
-  "Change fastForward.txt (fastForwardBranch 2nd commit)"
+  "(MERGE COMMIT||master)Change fastForward.txt (fastForwardBranch 2nd commit)"
+
+
 3-Just before this we used the command :
   $git push origin fastForwardBranch 
   in order to make that branch a remote branch on github 
   Commit changes :
   "Change fastForward.txt (fastForwardBranch 3rd commit)"
+
+
+4-Fix the 2nd commit message in this file missing: (MERGE COMMIT||master) it was:
+  "Change fastForward.txt (fastForwardBranch 2nd commit)" 
+  and we want it to be 
+  "(MERGE COMMIT||master)Change fastForward.txt (fastForwardBranch 2nd commit)"
+  Change this file ( making it more readable )
+  Commit changes:
+  "(MERGE COMMIT||master)Change fastForward.txt (fastForwardBranch 4th commit)"
+  Go back to master.
+  Merge fastForwardBranch into master (we are expecting a fast forward merge ) by running the command :
+  $git merge master fastForwardBranch.
+
