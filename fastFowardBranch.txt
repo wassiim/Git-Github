@@ -1,0 +1,5 @@
+1-Create fastForwardBranch.
+  Create fastForwardBranch.txt.
+  Change this file.
+  Commit changes:
+  "Create fastForwardBranch and fastForwardBranch.txt Change it(fastForwardBranch 1st commit)"
