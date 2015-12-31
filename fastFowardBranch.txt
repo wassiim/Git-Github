@@ -3,3 +3,6 @@
   Change this file.
   Commit changes:
   "Create fastForwardBranch and fastForwardBranch.txt Change it(fastForwardBranch 1st commit)"
+2-Change this file.
+  Commit changes
+  "Change fastForward.txt (fastForwardBranch 2nd commit)"
