@@ -49,3 +49,11 @@
 5-Change this file.
   Commit changes
   "Change fastForward.txt (fastForwardBranch 5th commit)"
+
+---------------------------------------------------------------
+  We pushed the 5th commit to Github.
+---------------------------------------------------------------
+
+6-Change this file.
+  Commit changes
+  "(MERGE COMMIT||master)Change fastForward.txt (fastForwardBranch 6th commit)"
