@@ -1,0 +1,8 @@
+1-Fix commit message in (MERGE COMMIT||master)Switch brances is possible with uncommited changes (fastForwardBranch 7th commit) 
+  Forget the h in branches
+  Fix file's name it should be : fastforwardBranch.txt
+  it is                        : fastFowardBranch.txt
+  Change file.
+  Commit changes
+  "Create issues Branch issues.txt file Change it ( issues Branch 1st commit )"
+
