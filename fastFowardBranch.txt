@@ -28,3 +28,24 @@
   Merge fastForwardBranch into master (we are expecting a fast forward merge ) by running the command :
   $git merge master fastForwardBranch.
 
+
+--------------------------------------------------------------------------------------
+  We have made 2 merges into master :
+  ------------------------------------------------------------------------------------
+  We switched to fastForwardBranch 
+  Make changes 
+  Commit changes
+  Switch back to master 
+  Merge fastForwardBranch into master 
+  Push to github using the command : $git push origin master
+  Switch to fastForwardBranch and push it to the remote fastForwardBranch
+  -------------------------------------------------------------------------------------
+  This time we want to push to the remote fastForwardBranch on Github.
+  Switch to master.
+  Merge fastForwardBranch into master.( we are expecting a fast forward merge ).
+  Push to the remote master branch on Github.
+---------------------------------------------------------------------------------------
+
+5-Change this file.
+  Commit changes
+  "Change fastForward.txt (fastForwardBranch 5th commit)"
