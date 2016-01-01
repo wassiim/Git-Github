@@ -57,3 +57,34 @@
 6-Change this file.
   Commit changes
   "(MERGE COMMIT||master)Change fastForward.txt (fastForwardBranch 6th commit)"
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+Note: Why are we doing step 7 ?
+      Because we heard that you can't switch branches while you still having uncommited changes so we are testing this and we are
+      going to see what is going to happen
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+7-Change this file.
+  Don't stage changes.
+  Try to swtich to master branch
+  What did you notice ?(we are expecting some sort of error messages that says we can't switch branches)
+-------------------------------------------------------------------------------------
+Problem :  file should have the name     fastForwardBranch.txt 
+           file's name is                fastFowardBranch.txt
+Note    :  Back when were creating thfastFoward file we typed the name incorrectly.
+Solution:  Fix it 
+-------------------------------------------------------------------------------------
+  TYPE [ ESC BUTTON :wq ] to save and exit terminal.
+  Conclusion: well we runed :
+  $git checkout master 
+  $git checkout fastForwardBranch
+  and everything seems to work just fine. 
+  Try creating new files ( untracked files ) and let's see what is going to happen
+  ( we are expecting some sort of error messages that says we can't switch branches ).
+  TYPE [ ESC button :wq] to save and exit terminal.
+Conclusion: everything seems to work just fine ( either we are wrong about the whole thing or we are missing something ).
+  Commit changes
+  "(MERGE COMMIT||master)Switch brances is possible with uncommited changes (fastForwardBranch 7th commit)"
+  Push to Github.

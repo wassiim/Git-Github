@@ -1,0 +1,11 @@
+1-Create this file ( fastForwardBranch ).
+2-Change this file.
+3-Don't stage Changes.
+4-Try to switch branches $git checkout master
+5-See what is going to happen ( checking wether we could switch branches while we have untracked files or not ).
+6-TYPE [ ESC :wq ] to quit and save.
+Conclusion: everything seems to work just fine ( either we are wrong about the whole thing or we are missing something ).
+  Commit changes
+  "(MERGE COMMIT||master)Switch brances is possible with uncommited changes (fastForwardBranch 7th commit)"
+  Push to Github.
+
