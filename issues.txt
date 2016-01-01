@@ -6,3 +6,8 @@
   Commit changes
   "Create issues Branch issues.txt file Change it ( issues Branch 1st commit )"
 
+
+2-Change file.
+  Commit changes
+  "(MERGE COMMIT||master)Change issues.txt ( issues Branch 2nd commit)"
+
