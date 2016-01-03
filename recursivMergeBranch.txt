@@ -14,4 +14,6 @@
   Push to Github by running 
   $git push origing recurisveMergeBranch
 
-
+4-Change this file
+  Commit changes and push to github
+  "( MERGE COMMIT||master ) Change recursiveMergeBranch.txt and push to github ( recursiveMergeBranch 3rd commit )"
