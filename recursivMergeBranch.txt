@@ -6,4 +6,12 @@
 
 2-Change this file.
   Commit changes
-  "Change recursiveMergeBranch.txt ( recursiveMergeBranch  2nd commit)"
+  "Change recursiveMergeBranch.txt ( recursiveMergeBranch 2nd commit )"
+
+3-Change this file 
+  Commit changes 
+  "Make recursiveMergeBranch a remote one and change recursiveMergeBranch.txt (recursiveMergeBranch 3rd commit )"
+  Push to Github by running 
+  $git push origing recurisveMergeBranch
+
+
