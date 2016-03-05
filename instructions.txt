@@ -1,0 +1,50 @@
+Hi, this is a tutorial where you could learn git and github.
+we will be putting instructions and all you need to do is to follow them and you will be fine, so:
+---------------------------------------------------------------------------------------------------
+Questions:
+---------------------------------------------------------------------------------------------------
+what is git ?
+what is github?
+what is git command line?
+what is github desktop?
+why do we need git?
+why do we need github?
+what problems do they solve and what do they offer?
+why should i care?
+---------------------------------------------------------------------------------------------------
+
+1-go to https://git-scm.com/ and download git shell, install it and open it.
+2-we are going to need to make some configuration:
+  type in the command:
+    git config --global user.name yourfistname yourlastname
+    git config --global user.email youremailadress
+3-we are going to make a flolder for our project:
+pwd   ===> writes the full pathname of the current working directory to the standard output.
+cd    ===> stands for change directory and then we type in the path to where we want to make our project
+mkdir ===> stands for make directory and then we type the name of the directory
+and now let's do it:
+  type in the command:
+  cd c/users/youraccountname/desktop/
+  mkdir project
+  cd gitproject
+
+4-Now that we are into our gitproject folder we are gonna need to do something that will make git been able 
+to know that it has to track that folder in particular and that is by typing this command:
+  git init
+
+5-make a license file a readme for the documentation of our project a .gitignores files and we will be talking about this 
+just be patient.
+
+touch LICENSE
+touch README.md
+touch .gitignore
+
+6-git status
+7-git add LICENSE readme.md .gitignore
+8-git commit -m "Initial commit"
+9-git remote origin add yourgithubprojet's url
+10-git push -u origin master
+
+and ther it is you have just created a git repository and pushed it to github. 
+Good job and now we are just getting started so let's go !!!
+---------------------------------------------------------------------------------------------------------
