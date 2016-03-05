@@ -12,7 +12,21 @@ why do we need github?
 what problems do they solve and what do they offer?
 why should i care?
 ---------------------------------------------------------------------------------------------------
-
+Content to cover:
+git basics
+setting up git repository
+setting up gihub repository
+clone github repository
+push git repository
+branching & merging
+staging 
+commiting
+view history
+show difference
+github pages:
+  user pages
+  project pages
+---------------------------------------------------------------------------------------------------
 1-go to https://git-scm.com/ and download git shell, install it and open it.
 2-we are going to need to make some configuration:
   type in the command:
