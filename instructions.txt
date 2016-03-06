@@ -19,7 +19,7 @@ setting up gihub repository
 clone github repository
 push git repository
 branching & merging
-staging 
+staging
 commiting
 view history
 show difference
@@ -42,11 +42,11 @@ and now let's do it:
   mkdir project
   cd gitproject
 
-4-Now that we are into our gitproject folder we are gonna need to do something that will make git been able 
+4-Now that we are into our gitproject folder we are gonna need to do something that will make git been able
 to know that it has to track that folder in particular and that is by typing this command:
   git init
 
-5-make a license file a readme for the documentation of our project a .gitignores files and we will be talking about this 
+5-make a license file a readme for the documentation of our project a .gitignores files and we will be talking about this
 just be patient.
 
 touch LICENSE
@@ -56,9 +56,21 @@ touch .gitignore
 6-git status
 7-git add LICENSE readme.md .gitignore
 8-git commit -m "Initial commit"
-9-git remote origin add yourgithubprojet's url
+9-git remote origin add yourgithubrepo's url
 10-git push -u origin master
 
-and ther it is you have just created a git repository and pushed it to github. 
+and there it is you have just created a git repository and pushed it to github.
 Good job and now we are just getting started so let's go !!!
 ---------------------------------------------------------------------------------------------------------
+Cloning
+
+In this section we are going to learn how to clone a repository from github:
+1-go to github and find a repository that you want to clone
+2-copy the repository's URL
+3-open git bash
+4-go to your the folder where you want to clone the repository:
+  cd thePathToYourFolder
+5-in the command line type:
+  git clone repositoryURL
+and that's it you are now ready to start working on it.
+----------------------------------------------------------------------------------------------------------
