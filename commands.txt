@@ -1,0 +1,18 @@
+LIST OF GIT COMMANDS:
+=====================
+git init
+git config --global user.name yourfirstname yourlastname
+git config --global user.email youremailadress
+git status
+git add filename
+git add listoffiles
+git add --all
+git add .
+git add *.extension
+git add foldername/*.extension
+git add foldername/
+git add "*.extension"
+git commit -m "commit message"
+git commit -a -m "commit message"
+git remote add origin URL
+git clone repositoryURL
