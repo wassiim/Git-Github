@@ -1,7 +1,8 @@
-Here we will be listing some of resources that will help learn git and github:
+Here we will be listing some resources that will help you learn git and github:
 
 https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf
 https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+https://www.youtube.com/playlist?list=PLyCj4RCToz5DRDx3sJ4iW9i8D2G8OdHYH
 http://stackoverflow.com/questions/tagged/git?sort=frequent&pageSize=15
 http://stackoverflow.com/questions/tagged/github?sort=votes&pageSize=15
 https://www.codeschool.com/learn/git
