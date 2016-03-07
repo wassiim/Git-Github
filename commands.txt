@@ -1,8 +1,14 @@
 LIST OF GIT COMMANDS:
 =====================
 git init
-git config --global user.name yourfirstname yourlastname
+git config --global "user.name" yourfirstname "yourlastname"
 git config --global user.email youremailadress
+git config user.email "yourEmailAdress"
+git config --global color.ui true
+git config --global core.editor emacs
+git config --global merge.tool opendiff
+git config --list
+git help
 git status
 git add filename
 git add listoffiles
@@ -12,7 +18,65 @@ git add *.extension
 git add foldername/*.extension
 git add foldername/
 git add "*.extension"
+git commit
 git commit -m "commit message"
+git commit -a
 git commit -a -m "commit message"
 git remote add origin URL
 git clone repositoryURL
+git branch
+git branch branchname
+git checkout branchname
+git checkout -b branchname
+git branch -d branchname
+git branch -r ###list all remote branches
+git push origin :remoteBranchName ### delete the remote branch local branch still exist
+git branch -d localBranchName ### delete the local branch if you have commits that you haven't pushed yet it will give you a warning
+git branch -D localBranchName
+git pull is equivalent to running git fetch and then run git merge origin/master with master
+git fetch
+git push origin master
+git push origin branchname ###push a remote branch
+git checkout master
+git merge branchname
+git log
+git log --pretty=oneline
+git log --pretty=format:"%h %ad- %s [%an]"
+git log --oneline -p
+git log --oneline --stat
+git log --oneline --graph
+git log --until=1.minute.ago
+git log --since=1.day.ago
+git log --since=1.hour.ago
+git log --since=1.month.ago --until=2.weeks.ago
+git log --since=2016-01.01 --until=2016-03-05
+git diff
+git diff HEAD
+git diff HEAD^
+git diff HEAD^^
+git diff HEAD~5
+git diff HEAD^..HEAD
+git diff sha1..sha2 ###compare between two commits speciffically
+git diff master branchname ###difference between tow branches here master and branchname
+git diff --since=1.week.ago --until=1.minute.ago
+git blame file.txt --date short
+In .git/info/exclude file put in the name of the folder that you want to exclude and git will not track it anymore
+===========Exclude Patterns============
+file.txt
+*.txt
+folderName
+logs/*.log
+=======================================
+gitignore file
+=======================================
+git log --oneline
+git remote -v
+git remote show
+git remote show origin
+git remote prune origin ###clean up deleted remote branches
+git tag
+git checkout tagName e.g git checkout v1.0.0
+git add tag v0.0.1 -m "version 0.0.1"
+git push --tags
+git rm filename
+git rm --cached file.log
