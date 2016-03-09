@@ -22,6 +22,7 @@ git commit
 git commit -m "commit message"
 git commit -a
 git commit -a -m "commit message"
+git commit -am "commit message"
 git remote add origin URL
 git clone repositoryURL
 git branch
@@ -80,3 +81,5 @@ git add tag v0.0.1 -m "version 0.0.1"
 git push --tags
 git rm filename
 git rm --cached file.log
+git fetch
+git rebase
