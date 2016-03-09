@@ -1,0 +1,18 @@
+=========================
+local branch rebase
+=========================
+git checkout branchname
+git rebase master
+git merge branchname
+====================================================
+IF THERE WAS A CONFLICT
+====================================================
+git fetch
+git rebase ### run all origin/master commits then run all master commits one at a time from the temporary area
+solve the conflict add the file to the staging area and then run git rebase --continue
+git rebase --skip
+git rebase --abort
+run git status and what you will see is that you are not currently on any branch.
+But when should i use merge commits and when should i use rebase?
+if you are dealing with a branch that has been for a long time and you have got a lot of work on it then you
+are better to run a merge commit so you would know when you have merged it into master otherwise use rebase.
