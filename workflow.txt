@@ -16,3 +16,11 @@ run git status and what you will see is that you are not currently on any branch
 But when should i use merge commits and when should i use rebase?
 if you are dealing with a branch that has been for a long time and you have got a lot of work on it then you
 are better to run a merge commit so you would know when you have merged it into master otherwise use rebase.
+==================================================================================================================================
+say that we have two branches master and feature ranch both have 1 common commits and 2 different commits so each have 3 commits.
+we want to update our feature branch so we run:
+git checkout feature
+git rebase master
+===================================================================================================================================
+the order in git rebase is different from git log
+git log shows from newest to oldest while git rebase shows commits from oldest to newest

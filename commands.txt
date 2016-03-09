@@ -43,6 +43,7 @@ git merge branchname
 git log
 git log --pretty=oneline
 git log --pretty=format:"%h %ad- %s [%an]"
+git log --oneline
 git log --oneline -p
 git log --oneline --stat
 git log --oneline --graph
@@ -83,3 +84,24 @@ git rm filename
 git rm --cached file.log
 git fetch
 git rebase
+git pull --rebase
+git rebase -i HEAD~3 ###3commits before the current HEAD
+git stash
+git stash save
+git stash save "message"
+git stash apply
+git stash apply stash @{0}
+git stash list
+git stash list --stat
+git stash show
+git stash show stash@{0}
+git stash show --patch
+git stash apply shtashname
+git stash drop
+git stash drop stash@{0}
+git stash pop ===========> git stash apply + git stash drop
+git stash save --keep-index
+git stash save --include-untracked
+git stash show stashname
+git stash branch branchname stash@{0}
+git stash clear
