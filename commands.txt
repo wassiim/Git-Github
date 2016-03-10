@@ -29,6 +29,8 @@ git branch
 git branch branchname
 git checkout branchname
 git checkout -b branchname
+git checkout --orphan gh-pages
+git push origin :gh-pages
 git branch -d branchname
 git branch -r ###list all remote branches
 git push origin :remoteBranchName ### delete the remote branch local branch still exist
