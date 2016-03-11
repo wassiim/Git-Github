@@ -23,6 +23,8 @@ git commit -m "commit message"
 git commit -a
 git commit -a -m "commit message"
 git commit -am "commit message"
+git reset --hard ###use it to have a clean index when starting a new orphan branch. Delete all staged file.
+git rm --cached <filename> ###unstage files.
 git remote add origin URL
 git clone repositoryURL
 git branch
