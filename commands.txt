@@ -1,6 +1,8 @@
 LIST OF GIT COMMANDS:
 =====================
 git init
+git init <repositoryName>
+git rm -r repositoryname/.git ###remove your git repo and end up with a normal directory.
 git config --global "user.name" yourfirstname "yourlastname"
 git config --global user.email youremailadress
 git config user.email "yourEmailAdress"
@@ -9,6 +11,7 @@ git config --global core.editor emacs
 git config --global merge.tool opendiff
 git config --list
 git help
+git commandName --help ###give you some help on how to use this git command.
 git status
 git add filename
 git add listoffiles
@@ -25,10 +28,22 @@ git commit -a -m "commit message"
 git commit -am "commit message"
 git reset --hard ###use it to have a clean index when starting a new orphan branch. Delete all staged file.
 git rm --cached <filename> ###unstage files.
-git remote add origin URL
+git remote
+git remote -v
+git remote show
+git remote show origin
+git remote add
+git remote add origin <URL>
+git remote add our_clone  ~/our_clone_directory ###you give this command a name to the remote and its path here
+the name is our_clone which is usually origin and the path is ~/our_clone_directory.
+git remote prune origin ###clean up deleted remote branches
 git clone repositoryURL
+git clone <pathToRepository> <newName>
+git clone <pathToRepository>###clone a repository locally
 git branch
 git branch branchname
+git checkout sha ###check code at a specific commit to go back type in
+git checkout master
 git checkout branchname
 git checkout -b branchname
 git checkout --orphan gh-pages
@@ -38,7 +53,11 @@ git branch -r ###list all remote branches
 git push origin :remoteBranchName ### delete the remote branch local branch still exist
 git branch -d localBranchName ### delete the local branch if you have commits that you haven't pushed yet it will give you a warning
 git branch -D localBranchName
-git pull is equivalent to running git fetch and then run git merge origin/master with master
+git pull origin branchName ###here branchName is the name of the branch that we want to pull from meaning: it could
+be a branch other than master, keep in mind that you might be going into merge conflict so don't worry solve the conflict
+by choosing which lines to keep and which to delete then keep on working also before pushing to github use git pull so you will have
+the latest changes of the repository.
+git pull command is equivalent to running git fetch and then run git merge origin/master with master
 git fetch
 git push origin master
 git push origin branchname ###push a remote branch
@@ -76,10 +95,6 @@ logs/*.log
 gitignore file
 =======================================
 git log --oneline
-git remote -v
-git remote show
-git remote show origin
-git remote prune origin ###clean up deleted remote branches
 git tag
 git checkout tagName e.g git checkout v1.0.0
 git add tag v0.0.1 -m "version 0.0.1"
