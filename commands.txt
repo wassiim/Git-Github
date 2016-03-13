@@ -26,6 +26,11 @@ git commit -m "commit message"
 git commit -a
 git commit -a -m "commit message"
 git commit -am "commit message"
+git commit --amend -m "new commit message" ###
+git reset --soft HEAD^ ###undo last commit, reset into staging and keep changes.
+git reset HEAD <fileName> ###untsage files and keep changes in working directory.
+git reset --hard HEAD^  ###undo last commit and blow away all changes
+git reset --hard HEAD^^ ###undo last two commits and blow away all changes.
 git reset --hard ###use it to have a clean index when starting a new orphan branch. Delete all staged file.
 git rm --cached <filename> ###unstage files.
 git remote
@@ -42,6 +47,7 @@ git clone <pathToRepository> <newName>
 git clone <pathToRepository>###clone a repository locally
 git branch
 git branch branchname
+git checkout -- <fileName> ###discard changes in working directory.
 git checkout sha ###check code at a specific commit to go back type in
 git checkout master
 git checkout branchname
@@ -76,6 +82,7 @@ git log --since=1.hour.ago
 git log --since=1.month.ago --until=2.weeks.ago
 git log --since=2016-01.01 --until=2016-03-05
 git diff
+git diff --staged
 git diff HEAD
 git diff HEAD^
 git diff HEAD^^
