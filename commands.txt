@@ -160,4 +160,8 @@ you can set autocrlf to one of those three values:
 core.autocrlf=true  (for Windows)
 core.autocrlf=false
 core.autocrlf=input (for LINUX/OSX)
-================================================================================
+========================================================================================================================
+reference:
+http://stackoverflow.com/questions/1967370/git-replacing-lf-with-crlf
+http://stackoverflow.com/questions/17628305/windows-git-warning-lf-will-be-replaced-by-crlf-is-that-warning-tail-backwar
+=========================================================================================================================
