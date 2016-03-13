@@ -29,9 +29,11 @@ git commit -am "commit message"
 git commit --amend -m "new commit message" ###
 git reset --soft HEAD^ ###undo last commit, reset into staging and keep changes.
 git reset HEAD <fileName> ###untsage files and keep changes in working directory.
+git reset --hard sha
 git reset --hard HEAD^  ###undo last commit and blow away all changes
 git reset --hard HEAD^^ ###undo last two commits and blow away all changes.
 git reset --hard ###use it to have a clean index when starting a new orphan branch. Delete all staged file.
+git revert sha
 git rm --cached <filename> ###unstage files.
 git remote
 git remote -v
@@ -64,6 +66,7 @@ be a branch other than master, keep in mind that you might be going into merge c
 by choosing which lines to keep and which to delete then keep on working also before pushing to github use git pull so you will have
 the latest changes of the repository.
 git pull command is equivalent to running git fetch and then run git merge origin/master with master
+git pull --rebase
 git fetch
 git push origin master
 git push origin branchname ###push a remote branch
@@ -72,6 +75,7 @@ git merge branchname
 git log
 git log --pretty=oneline
 git log --pretty=format:"%h %ad- %s [%an]"
+git log --patch
 git log --oneline
 git log --oneline -p
 git log --oneline --stat
@@ -109,9 +113,20 @@ git push --tags
 git rm filename
 git rm --cached file.log
 git fetch
+=========================================================================
+git checkout branchname
+git rebase master
+###this will run the commits from branchname after master's last commit.
+=========================================================================
 git rebase
-git pull --rebase
 git rebase -i HEAD~3 ###3commits before the current HEAD
+git rebase --continue
+words that you use with the git rebase -i command:
+pick
+reword ###change commit message.
+edit   ###split a commit.
+squash ###squash commits together.
+================================================================================
 git stash
 git stash save
 git stash save "message"
@@ -131,3 +146,12 @@ git stash save --include-untracked
 git stash show stashname
 git stash branch branchname stash@{0}
 git stash clear
+================================================================================
+LINE ENDINGS ON DIFFERENT OPERATING SYSTEMS
+WINDOWS:    \r\n  (crlf: carriage return + line feed)
+LINUX/OSX:  \n    (lf:   line feed)
+you can set autocrlf to one of those three values:
+core.autocrlf=true  (for Windows)
+core.autocrlf=false
+core.autocrlf=input (for LINUX/OSX)
+================================================================================
