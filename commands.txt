@@ -85,6 +85,12 @@ git log --since=1.day.ago
 git log --since=1.hour.ago
 git log --since=1.month.ago --until=2.weeks.ago
 git log --since=2016-01.01 --until=2016-03-05
+git reflog
+git reset --hard HEAD@{3} ###restore a deleted commit
+git reset --hard sha      ###restore a deleted commit
+git log --walk-reflogs
+git branch branchname sha_of_the_commit ###restore a deleted branch
+git branch branchname HEAD@{1}          ###restore a deelted branch
 git diff
 git diff --staged
 git diff HEAD
