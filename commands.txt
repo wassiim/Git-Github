@@ -36,13 +36,15 @@ git reset --hard ###use it to have a clean index when starting a new orphan bran
 git revert sha
 git rm --cached <filename> ###unstage files.
 git remote
-git remote -v
+git remote -v ###shows remote repository.
 git remote show
 git remote show origin
 git remote add
-git remote add origin <URL>
+git remote add origin <URL> ###add new remote: it takes the name of the remote (origin) and the adress <URL>.
 git remote add our_clone  ~/our_clone_directory ###you give this command a name to the remote and its path here
 the name is our_clone which is usually origin and the path is ~/our_clone_directory.
+git remote rm <name>
+git remote push -u <name> <branch>
 git remote prune origin ###clean up deleted remote branches
 git clone repositoryURL
 git clone <pathToRepository> <newName>
@@ -160,8 +162,10 @@ you can set autocrlf to one of those three values:
 core.autocrlf=true  (for Windows)
 core.autocrlf=false
 core.autocrlf=input (for LINUX/OSX)
-========================================================================================================================
+===================================================================================================
 reference:
+
 http://stackoverflow.com/questions/1967370/git-replacing-lf-with-crlf
 http://stackoverflow.com/questions/17628305/windows-git-warning-lf-will-be-replaced-by-crlf-is-that-warning-tail-backwar
-=========================================================================================================================
+
+====================================================================================================
