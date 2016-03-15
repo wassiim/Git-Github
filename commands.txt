@@ -155,6 +155,15 @@ git stash show stashname
 git stash branch branchname stash@{0}
 git stash clear
 ================================================================================
+git log --pretty=oneline #run this in the branch you want to cherry-pick from
+git checkout <branch>
+git cherry-pick sha
+git cherry-pick --edit sha #edit commit message
+git cherry-pick --no-commit <sha> <sha> #enter the list sha of the commit you want to combine
+git status #when cherry-picking it will show you that the changes were shared from the other branch and then commit them.
+git cherry-pick -x sha #show you the branch which you cherry-pick from.
+git cherry-pick signoff sha #show the author who cherry-pick the commit.
+================================================================================
 LINE ENDINGS ON DIFFERENT OPERATING SYSTEMS
 WINDOWS:    \r\n  (crlf: carriage return + line feed)
 LINUX/OSX:  \n    (lf:   line feed)
